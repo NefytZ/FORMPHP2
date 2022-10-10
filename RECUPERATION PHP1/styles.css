@@ -1,0 +1,57 @@
+:root {
+    --spacing-sm: 4px;
+    --spacing: 8px;
+    --spacing2: 16px;
+
+    --light: #f0f0f0;
+    --primary: green;
+    font-size:1.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+label {
+    margin-block-start: var(--spacing2);
+    margin-block-end: var(--spacing-sm);
+}
+
+input {
+    font-size: 1rem;
+    padding-block: var(--spacing);
+    padding-inline: var(--spacing2);
+}
+
+select {
+    padding-block: var(--spacing);
+    padding-inline: var(--spacing2);
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: var(--spacing);
+    border-width: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: fit-content;
+    margin-block-start: var(--spacing2);
+}
+
+button:hover {
+    filter: brightness(120%);
+}
+button:active {
+    filter: brightness(80%);
+}
+
+.error {
+    background-color: rgb(239, 206, 206);
+    color: red;
+    padding: var(--spacing2);
+}
